@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="/accounts/?target=/users/{{logname}}" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept="image/*"/>
+    <input type="text" name="fullname" value="{{ fullname }}" required/>
+    <input type="text" name="email" value="{{ email }}" required/>
+    <input type="submit" name="update" value="submit"/>
+    <input type="hidden" name="operation" value="edit_account"/>
+</form>
+
+<a href="/accounts/password/"><strong>Change password</strong></a>
+<br>
+<a href="/accounts/delete/"><strong>Delete account</strong></a>
+
+{% endblock %}

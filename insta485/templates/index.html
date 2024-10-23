@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="feed">
+    <div class="left-side">
+        <div class="class-input info-section">
+            <div>Your classes</div>
+            <ul>
+                <li>Class 1: _____</li>
+                <li>Class 2: _____</li>
+                <li>Class 3: _____</li>
+            </ul>
+            <button>Add Class</button>
+        </div>
+        <div class="result info-section">
+            <div>Schedule: </div>
+        </div>
+    </div>
+    <div>
+        <div class="divider"></div>
+    </div>
+    <div class="north-campus-map">
+        <img src="/static/images/north-campus.png" style="width:35rem;"/>
+    </div>
+</div>
+{% endblock %}
+<!-- {% for post in posts %}
+    <div class="post">
+        <div class="post_header">
+            <div style="display: flex; align-items: center;">
+                <a href="/users/{{post.owner}}/"><img src="{{ url_for('download_file', filename=post.owner_img_url) }}" style="width:32px;" alt="{{post.owner}}+{{post.owner_img_url}}"></a>
+                <a href="/users/{{post.owner}}/">{{post.owner}}</a>
+            </div>
+            <a href="/posts/{{post.postid}}/">{{post.timestamp}}</a>
+        </div>
+        <a href="/posts/{{post.postid}}/"><img src="{{ url_for('download_file', filename=post.img_url) }}" alt="{{post.owner}}+{{post.img_url}}"></a>
+        <div>
+            {{post.likes}}
+            {% if post.likes  == 1 %}
+                like
+            {% else %}
+                likes
+            {% endif %}
+        </div>
+        <div class="post_comments">
+            {% for comment in post.comments %}
+            <div class="single_comment">
+                <a href="/users/{{comment.owner}}/">{{comment.owner}}</a>
+                <span>{{comment.text}}</span>
+            </div>
+            {% endfor %}
+        </div>
+
+        {% if post.liked %}
+            <form action="/likes/?target=/" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="operation" value="like"/>
+                <input type="hidden" name="postid" value="{{ post.postid }}"/>
+                <input type="submit" name="like" value="like"/>
+            </form>
+        {% else %}
+            <form action="/likes/?target=/" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="operation" value="unlike"/>
+                <input type="hidden" name="postid" value="{{ post.postid }}"/>
+                <input type="submit" name="unlike" value="unlike"/>
+            </form>
+        {% endif %}
+
+        <form action="/comments/?target=/" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="operation" value="create"/>
+            <input type="hidden" name="postid" value="{{ post.postid }}"/>
+            <input type="text" name="text" required/>
+            <input type="submit" name="comment" value="comment"/>
+        </form>
+    </div>
+{% endfor %} -->
