@@ -6,45 +6,43 @@ import uuid
 import hashlib
 import arrow
 import flask
+from flask import jsonify
 import insta485
 
 
 insta485.app.secret_key = b'\xa8\xf1\xbbL\xad;\x01\x07\
     x94\xef\x89g\xd4\xc6\xd3\xd1\xaf\xca\xf0K\t\x8c\x00\x00'
 
-
-def hash_password(password_val, password_in_database=None):
-    """HASHING HASHING."""
-    if password_in_database is None:
-        return hash_password_impl(password_val)
-
-    algorithm, salt, _ = password_in_database.split('$')
-    return hash_password_impl(password_val, algorithm, salt)
+def get_data(search_slug):
+    connection = insta485.model.get_db()
+    cur = connection.execute(
+        "SELECT * FROM paths;"
+    )
+    paths = cur.fetchall()
 
 
-def hash_password_impl(password_val, algorithm=None, salt=None):
-    """HASHING HASHING."""
-    if salt is None or algorithm is None:
-        algorithm = 'sha512'
-        salt = uuid.uuid4().hex
+    search = search_slug.split('+')
+    print(paths)
+    times = []
 
-    hash_obj = hashlib.new(algorithm)
-    password_salted = salt + password_val
-    hash_obj.update(password_salted.encode('utf-8'))
-    password_hash = hash_obj.hexdigest()
-    password_db_string = "$".join([algorithm, salt, password_hash])
-    return password_db_string
+    for i in range(len(search) - 1):
+        path_found = False
+        for path in paths:
+            if path['loc1'] == search[i] and path['loc2'] == search[i + 1] or path['loc1'] == search[i + 1] and path['loc2'] == search[i]:
+                times.append(path['time_seconds'])
+                path_found = True
+                break
+        if not path_found:
+            times.append(-1)
+            print(f"error, path not found between `{search[i]}` and `{search[i + 1]}`")
+    
+    print("times", times)
+    return times
 
-
-@insta485.app.route('/uploads/<path:filename>')
-def download_file(filename):
-    """DOWNLOAD DOWNLOAD."""
-    if "user" not in flask.session:
-        flask.abort(403)
-
-    return flask.send_from_directory(
-        insta485.app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
-
+@insta485.app.route('/api/data/<search_slug>', methods=['GET'])
+def fetch_data(search_slug):
+    data = get_data(search_slug)
+    return jsonify(data)
 
 @insta485.app.route('/')
 def show_index():
@@ -69,67 +67,8 @@ def show_index():
         # "logname": user
     }
     posts = []
-    # for post in post_ids:
-    #     new_post = {}
-    #     new_post['postid'] = post['postid']
-    #     new_post['owner'] = post['username2']
-    #     new_post['img_url'] = post['filename']
-
-    #     time = arrow.get(post['created'], 'YYYY-MM-DD HH:mm:ss')
-    #     new_post['timestamp'] = time.humanize()
-
-    #     cur = connection.execute(
-    #         "SELECT filename FROM users "
-    #         "WHERE username=?;",
-    #         (post['username2'],)
-    #     )
-    #     prof_pic = cur.fetchall()
-
-    #     new_post['owner_img_url'] = prof_pic[0]['filename']
-
-    #     cur = connection.execute(
-    #         "SELECT likeid, owner, postid, created FROM likes "
-    #         "WHERE postid=?;",
-    #         (post['postid'],)
-    #     )
-    #     likes = cur.fetchall()
-    #     new_post['likes'] = len(likes)
-
-    #     cur = connection.execute(
-    #         "SELECT commentid, owner, postid, text, created FROM comments "
-    #         "where postid=? "
-    #         "ORDER BY commentid;",
-    #         (post['postid'],)
-    #     )
-
-    #     new_post['comments'] = cur.fetchall()
-
-    #     cur = connection.execute(
-    #         "SELECT * FROM likes "
-    #         "WHERE owner=? AND postid=?",
-    #         (user, post['postid'],)
-    #     )
-
-    #     liked = cur.fetchall()
-    #     if len(liked):
-    #         new_post['liked'] = False
-    #     else:
-    #         new_post['liked'] = True
-
-    #     posts.append(new_post)
-
-    #     context['posts'] = posts
-
-
-    #     # names = [user_block for user_block in users if (
-    #     # {"username2": user_block['username']} not in to_delete)
-    #     # and (user_block['username'] != user)]
-    #     # context = {
-    #     #     "logname": user,
-    #     #     "not_following": names
-    #     # }
-
     return flask.render_template("index.html", **context)
+
 
 
 # @insta485.app.route('/users/<user_url_slug>/')
