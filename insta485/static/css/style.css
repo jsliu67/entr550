@@ -25,7 +25,7 @@ a:link {
     justify-content: space-between;
     color: #f6f6f6;
 }
-.feed {
+.page {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
