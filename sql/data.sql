@@ -18,7 +18,7 @@ VALUES
     ),
     (
         3,
-        "BBB",
         "DOW",
+        "GGBL",
         70
     );
