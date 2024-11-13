@@ -77,3 +77,38 @@ input{
   
 } */
   
+/* Style for the main container of the form */
+.styled-form {
+    padding: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Flex container to align inputs horizontally */
+.styled-form .input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+/* Style for each input box (TextField) */
+.styled-form .input-box {
+    flex: 1;
+}
+
+/* Background color for TextField and TimePicker */
+.styled-form .input-box .MuiInputBase-root {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+}
+
+/* Outline color for TextField */
+.styled-form .input-box .MuiOutlinedInput-root {
+    border-color: #ccc;
+}
+
+/* Focused outline color for TextField */
+.styled-form .input-box .MuiOutlinedInput-root.Mui-focused {
+    border-color: #3f51b5;
+}

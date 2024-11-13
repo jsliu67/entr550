@@ -5,7 +5,7 @@ import Class from "./class";
 
 // The parameter of this function is an object with a string called url inside it.
 // url is a prop for the Post component.
-export default function Day({ }) {
+export default function Day({ id, onRemove }) {
   /* Display image and post owner of a single post */
   // const [things, setThings] = useState([]);
 
@@ -57,7 +57,7 @@ export default function Day({ }) {
       return diffSeconds;
     }
 
-    const tempSetup = () => {
+    const tempSetupBad = () => {
       const newClasses = [
         new Class("BBB", "10:00", "10:01"),
         new Class("DOW", "10:01", "10:02"),
@@ -65,6 +65,15 @@ export default function Day({ }) {
       ];
       setClasses(newClasses);
     }
+
+    const tempSetupGood = () => {
+        const newClasses = [
+          new Class("BBB", "10:00", "10:01"),
+          new Class("DOW", "10:10", "10:12"),
+          new Class("GGBL", "10:20", "10:30")
+        ];
+        setClasses(newClasses);
+      }
 
     const addClass = () => {
       const newClasses = [...classes, new Class()]
@@ -92,9 +101,10 @@ export default function Day({ }) {
             <Input key={index} num={index} setClassCallback={setClassCallback} />
             ))}
             <button onClick={addClass}>Add Class</button>
-            <button onClick={addDay}>Add Day</button>
-            <button onClick={tempSetup}>Shortcut Class</button>
+            <button onClick={tempSetupBad}>Shortcut Class Bad</button>
+            <button onClick={tempSetupGood}>Shortcut Class Good</button>
             <button onClick={getData}>Check Schedule</button>
+            <button onClick={() => onRemove(id)}>Remove Day</button>
         </div>
         <div>
             <a>Schedule</a>
@@ -104,3 +114,8 @@ export default function Day({ }) {
   );
 
 }
+
+Day.propTypes = {
+    id: PropTypes.number.isRequired,
+    onRemove: PropTypes.func.isRequired,
+};
