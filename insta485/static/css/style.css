@@ -79,22 +79,26 @@ input{
   
 /* Style for the main container of the form */
 .styled-form {
-    padding: 16px;
+    padding: 0.6rem;
     max-width: 1000px;
     margin: 0 auto;
+    font-size: 1rem;
 }
 
 /* Flex container to align inputs horizontally */
 .styled-form .input-container {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 1rem;
     align-items: center;
 }
 
 /* Style for each input box (TextField) */
 .styled-form .input-box {
     flex: 1;
+}
+.input-box {
+    max-width: 9rem;
 }
 
 /* Background color for TextField and TimePicker */
@@ -111,4 +115,74 @@ input{
 /* Focused outline color for TextField */
 .styled-form .input-box .MuiOutlinedInput-root.Mui-focused {
     border-color: #3f51b5;
+}
+
+/* Change font size inside input fields */
+.styled-form .input-box .MuiInputBase-input {
+    font-size: 18px; /* Adjust this value for desired font size */
+}
+
+/* Change font size inside TimePicker input */
+.styled-form .input-box .MuiOutlinedInput-input {
+    font-size: 18px; /* Adjust this value for desired font size */
+}
+
+/* Change label font size */
+.styled-form .input-box .MuiInputLabel-root {
+    font-size: 18px; /* Adjust this value for desired label font size */
+}
+
+
+/* Day =================== */
+.day {
+    border: 4px solid #3f51b5;
+    padding: 0.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 25px;
+    margin: 1rem;
+}
+
+.day-title {
+    font-weight: bold;
+}
+
+
+/* Buttons ================= */
+
+/* Style for the MUI button */
+.styled-form .button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    cursor: pointer;
+    width: auto;
+}
+
+/* Hover effect */
+.styled-form .button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05);
+}
+
+/* Active effect when clicked */
+.styled-form .button:active {
+    background-color: #388e3c; /* Even darker green when clicked */
+}
+
+
+/* Schedule ====================*/
+.schedule-box {
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+/* PAGE ================= */
+.page {
+    display: flex;
+    flex-direction: row;
 }
