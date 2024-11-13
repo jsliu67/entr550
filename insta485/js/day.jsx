@@ -5,10 +5,9 @@ import Class from "./class";
 
 // The parameter of this function is an object with a string called url inside it.
 // url is a prop for the Post component.
-export default function Page({ }) {
+export default function Day({ }) {
   /* Display image and post owner of a single post */
   // const [things, setThings] = useState([]);
-
 
   const [classes, setClasses] = useState([    
     new Class(), new Class(), new Class()
@@ -104,9 +103,4 @@ export default function Page({ }) {
     </div>
   );
 
-  // <img src={imgUrl} alt="post_image" />
-  //     <p>{owner}</p>
 }
-
-Page.propTypes = {
-};

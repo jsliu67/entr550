@@ -8,9 +8,13 @@ export default function Input({ num, setClassCallback }) {
     const [thisClass, setThisClass] = useState(new Class('', '', ''));
 
     const handleInputChange = (field) => (event) => {
-        const updatedClass = { ...thisClass, [field]: event.target.value }; // Update the specific field
+        const updatedClass = new Class(
+            field === 'name' ? event.target.value : thisClass.name,
+            field === 'start' ? event.target.value : thisClass.start,
+            field === 'end' ? event.target.value : thisClass.end
+        );
         setThisClass(updatedClass); // Update state with the new class instance
-        setClassCallback(thisClass, num);
+        setClassCallback(updatedClass, num);
     };
 
     return (
@@ -19,18 +23,21 @@ export default function Input({ num, setClassCallback }) {
             <input
                 className="amount-form-single"
                 type="text"
+                value={thisClass.name}
                 onChange={handleInputChange('name')} // Pass the field name
             />
             Start Time:
             <input
                 className="amount-form-single"
                 type="time"
+                value={thisClass.start}
                 onChange={handleInputChange('start')} // Pass the field name
             />
             End Time:
             <input
                 className="amount-form-single"
                 type="time"
+                value={thisClass.end}
                 onChange={handleInputChange('end')} // Pass the field name
             />
         </div>
