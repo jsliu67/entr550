@@ -17,6 +17,7 @@ export default function Day({ id, onRemove }) {
     const [numClasses, setNumClasses] = useState(3);
     const [times, setTimes] = useState([]);
     const [isValid, setIsValid] = useState(0);
+    const [badTimes, setBadTimes] = useState([]);
 
     const buttonStyles = {
         backgroundColor: 'white',
@@ -43,6 +44,7 @@ export default function Day({ id, onRemove }) {
     const calculateSchedule = (timeToDests) => {
         // set default value to true
         setIsValid(2);
+        let newBadTimes = [];
         for (let i = 0; i < numClasses - 1; i++) {
             let timeBetween = timeDifferenceInSeconds(classes[i].end, classes[i + 1].start);
             console.log(classes[i].end);
@@ -52,9 +54,16 @@ export default function Day({ id, onRemove }) {
 
             if (timeBetween < timeTaken) {
                 // not enough time between
+                newBadTimes = [
+                    ...newBadTimes,
+                    { from: classes[i].name, to: classes[i + 1].name, timeBetween: timeBetween, timeTaken: timeTaken }
+                ];
                 setIsValid(1);
+                console.log(newBadTimes)
+                // console.log(badTimes)
             }
         }
+        setBadTimes(newBadTimes);
     };
 
     function timeDifferenceInSeconds(t1, t2) {
@@ -119,7 +128,7 @@ export default function Day({ id, onRemove }) {
 
     return (
         <div className="reactEntry day">
-            <div className="day-title">*** Day {id} ***</div>
+            <div className="day-title">     Day {id}</div>
             <div>
                 {classes.map((c, index) => (
                     <Input key={index} num={index} setClassCallback={setClassCallback} />
@@ -131,8 +140,24 @@ export default function Day({ id, onRemove }) {
             </div>
             <Button variant="outlined" className="button" onClick={getData} sx={buttonStyles}>Check Schedule</Button>
             <div className="schedule-box">
-                <a>*** Schedule {id} ***</a>
-                <div>{isValid == 0 ? "_______________" : (isValid == 1 ? "Bad" : "Good")}</div>
+                <a>     Schedule {id}: </a>
+                <a>{isValid == 0 ? "_______________" : (isValid == 1 ? "Bad ✘" : "Good ✔")}</a>
+                {
+                    isValid === 1 && (
+                        <div className="issue-breakdown">
+                            <p>Issue Breakdown:</p>
+                            {badTimes.map((badTime, index) => (
+                                <div key={index}>
+                                    <p>From: {badTime.from}</p>
+                                    <p>To: {badTime.to}</p>
+                                    <p>Time between classes: {badTime.timeBetween}</p>
+                                    <p>Time to reach destination: {badTime.timeTaken}</p>
+                                    <hr />
+                                </div>
+                            ))}
+                        </div>
+                    )
+                }
             </div>
         </div>
     );

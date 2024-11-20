@@ -186,3 +186,7 @@ input{
     display: flex;
     flex-direction: row;
 }
+
+.issue-breakdown {
+    font-weight: normal;
+}
