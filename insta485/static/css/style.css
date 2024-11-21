@@ -190,3 +190,8 @@ input{
 .issue-breakdown {
     font-weight: normal;
 }
+
+.day-name {
+    display: flex;
+    justify-content: space-between;
+}

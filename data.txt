@@ -1,0 +1,300 @@
+0  |       Art and Architecture|                        BBB|   617.600327
+1  |       Art and Architecture|                         CE|   850.215708
+2  |       Art and Architecture|                       CSRB|   963.545257
+3  |       Art and Architecture|                   Chrysler|   524.373054
+4  |       Art and Architecture|                     Cooley|   771.574095
+5  |       Art and Architecture|                        DOW|   653.726797
+6  |       Art and Architecture|                       DUDE|   593.968066
+7  |       Art and Architecture|                       EECS|   671.898349
+8  |       Art and Architecture|                      ENGIN|   708.197700
+9  |       Art and Architecture|                       EWRE|   693.756197
+10 |       Art and Architecture|                      FMCRB|   979.645621
+11 |       Art and Architecture|                        FXB|   812.994213
+12 |       Art and Architecture|                       GGBL|   695.874346
+13 |       Art and Architecture|  Gorguze Family Laboratory|   872.994213
+14 |       Art and Architecture|                        IOE|   739.925006
+15 |       Art and Architecture|                       LBME|   816.126628
+16 |       Art and Architecture|      Music, Theater, Dance|   238.793304
+17 |       Art and Architecture|                       NAME|  1126.107882
+18 |       Art and Architecture|                       NCRC|  1401.079587
+19 |       Art and Architecture|                       Name|  1144.562960
+20 |       Art and Architecture|                  Pierpoint|   728.519049
+21 |       Art and Architecture|                   Pierpont|   495.195264
+22 |       Art and Architecture|                     STAMPS|   529.540073
+23 |       Art and Architecture|              Wilson Center|   864.161337
+24 |                        BBB|                         CE|   232.615381
+25 |                        BBB|                       CSRB|   345.944931
+26 |                        BBB|                   Chrysler|   151.582854
+27 |                        BBB|                     Cooley|   309.233874
+28 |                        BBB|                        DOW|    36.126471
+29 |                        BBB|                       DUDE|   152.488247
+30 |                        BBB|                       EECS|   132.463725
+31 |                        BBB|                      ENGIN|   266.717881
+32 |                        BBB|                       EWRE|   154.321573
+33 |                        BBB|                      FMCRB|   440.210998
+34 |                        BBB|                        FXB|   273.559589
+35 |                        BBB|                       GGBL|    78.274020
+36 |                        BBB|  Gorguze Family Laboratory|   307.615381
+37 |                        BBB|                        IOE|   298.445187
+38 |                        BBB|                       LBME|   372.898855
+39 |                        BBB|      Music, Theater, Dance|   378.807022
+40 |                        BBB|                       NAME|   586.673259
+41 |                        BBB|                       NCRC|   861.644963
+42 |                        BBB|                       Name|   605.128336
+43 |                        BBB|                  Pierpoint|   110.918722
+44 |                        BBB|                   Pierpont|   122.405063
+45 |                        BBB|                     STAMPS|    88.060254
+46 |                        BBB|              Wilson Center|   324.726713
+47 |                         CE|                       CSRB|   125.649698
+48 |                         CE|                   Chrysler|   356.056362
+49 |                         CE|                     Cooley|   385.301215
+50 |                         CE|                        DOW|   196.488910
+51 |                         CE|                       DUDE|   385.103628
+52 |                         CE|                       EECS|   208.531067
+53 |                         CE|                      ENGIN|   351.300911
+54 |                         CE|                       EWRE|   230.388915
+55 |                         CE|                      FMCRB|   268.118647
+56 |                         CE|                        FXB|   135.000000
+57 |                         CE|                       GGBL|   154.341361
+58 |                         CE|  Gorguze Family Laboratory|    75.000000
+59 |                         CE|                        IOE|   383.028217
+60 |                         CE|                       LBME|   498.708861
+61 |                         CE|      Music, Theater, Dance|   611.422403
+62 |                         CE|                       NAME|   414.580908
+63 |                         CE|                       NCRC|   689.552612
+64 |                         CE|                       Name|   444.572371
+65 |                         CE|                  Pierpoint|   343.534103
+66 |                         CE|                   Pierpont|   355.020444
+67 |                         CE|                     STAMPS|   320.675635
+68 |                         CE|              Wilson Center|   186.167125
+69 |                       CSRB|                   Chrysler|   481.706060
+70 |                       CSRB|                     Cooley|   510.950913
+71 |                       CSRB|                        DOW|   309.818460
+72 |                       CSRB|                       DUDE|   498.433177
+73 |                       CSRB|                       EECS|   334.180765
+74 |                       CSRB|                      ENGIN|   476.950608
+75 |                       CSRB|                       EWRE|   356.038613
+76 |                       CSRB|                      FMCRB|   142.468949
+77 |                       CSRB|                        FXB|   260.649698
+78 |                       CSRB|                       GGBL|   279.991059
+79 |                       CSRB|  Gorguze Family Laboratory|   200.649698
+80 |                       CSRB|                        IOE|   508.677915
+81 |                       CSRB|                       LBME|   624.358559
+82 |                       CSRB|      Music, Theater, Dance|   724.751953
+83 |                       CSRB|                       NAME|   288.931210
+84 |                       CSRB|                       NCRC|   563.902914
+85 |                       CSRB|                       Name|   318.922673
+86 |                       CSRB|                  Pierpoint|   456.863653
+87 |                       CSRB|                   Pierpont|   468.349994
+88 |                       CSRB|                     STAMPS|   434.005185
+89 |                       CSRB|              Wilson Center|   311.816822
+90 |                   Chrysler|                     Cooley|   283.948060
+91 |                   Chrysler|                        DOW|   187.709324
+92 |                   Chrysler|                       DUDE|    99.544423
+93 |                   Chrysler|                       EECS|   147.525295
+94 |                   Chrysler|                      ENGIN|   213.774057
+95 |                   Chrysler|                       EWRE|   169.383143
+96 |                   Chrysler|                      FMCRB|   455.272567
+97 |                   Chrysler|                        FXB|   288.621158
+98 |                   Chrysler|                       GGBL|   201.715001
+99 |                   Chrysler|  Gorguze Family Laboratory|   348.621158
+100|                   Chrysler|                        IOE|   245.501363
+101|                   Chrysler|                       LBME|   291.753574
+102|                   Chrysler|      Music, Theater, Dance|   285.579750
+103|                   Chrysler|                       NAME|   601.734828
+104|                   Chrysler|                       NCRC|   876.706533
+105|                   Chrysler|                       Name|   620.189905
+106|                   Chrysler|                  Pierpoint|   262.501576
+107|                   Chrysler|                   Pierpont|    29.177791
+108|                   Chrysler|                     STAMPS|    63.522600
+109|                   Chrysler|              Wilson Center|   339.788283
+110|                     Cooley|                        DOW|   273.107403
+111|                     Cooley|                       DUDE|   184.403637
+112|                     Cooley|                       EECS|   176.770148
+113|                     Cooley|                      ENGIN|    70.174003
+114|                     Cooley|                       EWRE|   198.627996
+115|                     Cooley|                      FMCRB|   453.126322
+116|                     Cooley|                        FXB|   286.474913
+117|                     Cooley|                       GGBL|   230.959854
+118|                     Cooley|  Gorguze Family Laboratory|   346.474913
+119|                     Cooley|                        IOE|    38.446696
+120|                     Cooley|                       LBME|   134.958981
+121|                     Cooley|      Music, Theater, Dance|   532.780791
+122|                     Cooley|                       NAME|   599.588583
+123|                     Cooley|                       NCRC|   874.560288
+124|                     Cooley|                       Name|   618.043660
+125|                     Cooley|                  Pierpoint|   359.439368
+126|                     Cooley|                   Pierpont|   276.378831
+127|                     Cooley|                     STAMPS|   248.831629
+128|                     Cooley|              Wilson Center|   337.642038
+129|                        DOW|                       DUDE|   188.614717
+130|                        DOW|                       EECS|    96.337255
+131|                        DOW|                      ENGIN|   249.081572
+132|                        DOW|                       EWRE|   118.195103
+133|                        DOW|                      FMCRB|   404.084527
+134|                        DOW|                        FXB|   237.433118
+135|                        DOW|                       GGBL|    42.147549
+136|                        DOW|  Gorguze Family Laboratory|   271.488910
+137|                        DOW|                        IOE|   280.808879
+138|                        DOW|                       LBME|   336.772385
+139|                        DOW|      Music, Theater, Dance|   414.933493
+140|                        DOW|                       NAME|   550.546788
+141|                        DOW|                       NCRC|   825.518493
+142|                        DOW|                       Name|   569.001865
+143|                        DOW|                  Pierpoint|   147.045193
+144|                        DOW|                   Pierpont|   158.531534
+145|                        DOW|                     STAMPS|   124.186725
+146|                        DOW|              Wilson Center|   288.600243
+147|                       DUDE|                       EECS|   247.069718
+148|                       DUDE|                      ENGIN|   114.229634
+149|                       DUDE|                       EWRE|   268.927566
+150|                       DUDE|                      FMCRB|   497.181953
+151|                       DUDE|                        FXB|   330.530544
+152|                       DUDE|                       GGBL|   230.762266
+153|                       DUDE|  Gorguze Family Laboratory|   390.530544
+154|                       DUDE|                        IOE|   145.956940
+155|                       DUDE|                       LBME|   319.362618
+156|                       DUDE|      Music, Theater, Dance|   355.174761
+157|                       DUDE|                       NAME|   643.644214
+158|                       DUDE|                       NCRC|   918.615919
+159|                       DUDE|                       Name|   662.099291
+160|                       DUDE|                  Pierpoint|   263.406969
+161|                       DUDE|                   Pierpont|    98.772802
+162|                       DUDE|                     STAMPS|    64.427993
+163|                       DUDE|              Wilson Center|   381.697669
+164|                       EECS|                      ENGIN|   152.744317
+165|                       EECS|                       EWRE|    21.857848
+166|                       EECS|                      FMCRB|   307.747272
+167|                       EECS|                        FXB|   141.095863
+168|                       EECS|                       GGBL|    54.189706
+169|                       EECS|  Gorguze Family Laboratory|   201.095863
+170|                       EECS|                        IOE|   184.471624
+171|                       EECS|                       LBME|   290.177794
+172|                       EECS|      Music, Theater, Dance|   433.105045
+173|                       EECS|                       NAME|   454.209533
+174|                       EECS|                       NCRC|   729.181238
+175|                       EECS|                       Name|   472.664611
+176|                       EECS|                  Pierpoint|   182.669220
+177|                       EECS|                   Pierpont|   176.703085
+178|                       EECS|                     STAMPS|   211.047894
+179|                       EECS|              Wilson Center|   192.262988
+180|                      ENGIN|                       EWRE|   174.602165
+181|                      ENGIN|                      FMCRB|   382.952319
+182|                      ENGIN|                        FXB|   216.300911
+183|                      ENGIN|                       GGBL|   206.934023
+184|                      ENGIN|  Gorguze Family Laboratory|   276.300911
+185|                      ENGIN|                        IOE|    31.727306
+186|                      ENGIN|                       LBME|   205.132984
+187|                      ENGIN|      Music, Theater, Dance|   469.404395
+188|                      ENGIN|                       NAME|   529.414580
+189|                      ENGIN|                       NCRC|   804.386285
+190|                      ENGIN|                       Name|   547.869658
+191|                      ENGIN|                  Pierpoint|   335.413538
+192|                      ENGIN|                   Pierpont|   213.002436
+193|                      ENGIN|                     STAMPS|   178.657627
+194|                      ENGIN|              Wilson Center|   267.468035
+195|                       EWRE|                      FMCRB|   285.889425
+196|                       EWRE|                        FXB|   119.238016
+197|                       EWRE|                       GGBL|    76.047554
+198|                       EWRE|  Gorguze Family Laboratory|   179.238016
+199|                       EWRE|                        IOE|   206.329471
+200|                       EWRE|                       LBME|   312.035642
+201|                       EWRE|      Music, Theater, Dance|   454.962893
+202|                       EWRE|                       NAME|   432.351685
+203|                       EWRE|                       NCRC|   707.323390
+204|                       EWRE|                       Name|   450.806763
+205|                       EWRE|                  Pierpoint|   204.527068
+206|                       EWRE|                   Pierpont|   198.560933
+207|                       EWRE|                     STAMPS|   232.905742
+208|                       EWRE|              Wilson Center|   170.405140
+209|                      FMCRB|                        FXB|   166.651409
+210|                      FMCRB|                       GGBL|   361.936978
+211|                      FMCRB|  Gorguze Family Laboratory|   226.651409
+212|                      FMCRB|                        IOE|   414.679626
+213|                      FMCRB|                       LBME|   588.085303
+214|                      FMCRB|      Music, Theater, Dance|   740.852317
+215|                      FMCRB|                       NAME|   146.462261
+216|                      FMCRB|                       NCRC|   421.433966
+217|                      FMCRB|                       Name|   176.453725
+218|                      FMCRB|                  Pierpoint|   490.416493
+219|                      FMCRB|                   Pierpont|   484.450358
+220|                      FMCRB|                     STAMPS|   518.795167
+221|                      FMCRB|              Wilson Center|   217.818533
+222|                        FXB|                       GGBL|   195.285569
+223|                        FXB|  Gorguze Family Laboratory|    60.000000
+224|                        FXB|                        IOE|   248.028217
+225|                        FXB|                       LBME|   421.433894
+226|                        FXB|      Music, Theater, Dance|   574.200908
+227|                        FXB|                       NAME|   313.113670
+228|                        FXB|                       NCRC|   588.085374
+229|                        FXB|                       Name|   331.568747
+230|                        FXB|                  Pierpoint|   323.765084
+231|                        FXB|                   Pierpont|   317.798949
+232|                        FXB|                     STAMPS|   352.143758
+233|                        FXB|              Wilson Center|    51.167125
+234|                       GGBL|  Gorguze Family Laboratory|   229.341361
+235|                       GGBL|                        IOE|   238.661329
+236|                       GGBL|                       LBME|   344.367500
+237|                       GGBL|      Music, Theater, Dance|   457.081042
+238|                       GGBL|                       NAME|   508.399239
+239|                       GGBL|                       NCRC|   783.370944
+240|                       GGBL|                       Name|   526.854316
+241|                       GGBL|                  Pierpoint|   189.192742
+242|                       GGBL|                   Pierpont|   200.679083
+243|                       GGBL|                     STAMPS|   166.334274
+244|                       GGBL|              Wilson Center|   246.452694
+245|  Gorguze Family Laboratory|                        IOE|   308.028217
+246|  Gorguze Family Laboratory|                       LBME|   481.433894
+247|  Gorguze Family Laboratory|      Music, Theater, Dance|   634.200908
+248|  Gorguze Family Laboratory|                       NAME|   373.113670
+249|  Gorguze Family Laboratory|                       NCRC|   648.085374
+250|  Gorguze Family Laboratory|                       Name|   391.568747
+251|  Gorguze Family Laboratory|                  Pierpoint|   383.765084
+252|  Gorguze Family Laboratory|                   Pierpont|   377.798949
+253|  Gorguze Family Laboratory|                     STAMPS|   395.675635
+254|  Gorguze Family Laboratory|              Wilson Center|   111.167125
+255|                        IOE|                       LBME|   173.405678
+256|                        IOE|      Music, Theater, Dance|   501.131701
+257|                        IOE|                       NAME|   561.141887
+258|                        IOE|                       NCRC|   836.113591
+259|                        IOE|                       Name|   579.596964
+260|                        IOE|                  Pierpoint|   367.140844
+261|                        IOE|                   Pierpont|   244.729742
+262|                        IOE|                     STAMPS|   210.384933
+263|                        IOE|              Wilson Center|   299.195341
+264|                       LBME|      Music, Theater, Dance|   577.333324
+265|                       LBME|                       NAME|   734.547564
+266|                       LBME|                       NCRC|  1009.519269
+267|                       LBME|                       Name|   753.002642
+268|                       LBME|                  Pierpoint|   472.847014
+269|                       LBME|                   Pierpont|   320.931364
+270|                       LBME|                     STAMPS|   355.276173
+271|                       LBME|              Wilson Center|   472.601019
+272|      Music, Theater, Dance|                       NAME|   887.314578
+273|      Music, Theater, Dance|                       NCRC|  1162.286283
+274|      Music, Theater, Dance|                       Name|   905.769655
+275|      Music, Theater, Dance|                  Pierpoint|   489.725745
+276|      Music, Theater, Dance|                   Pierpont|   256.401959
+277|      Music, Theater, Dance|                     STAMPS|   290.746768
+278|      Music, Theater, Dance|              Wilson Center|   625.368033
+279|                       NAME|                       NCRC|   567.896226
+280|                       NAME|                       Name|   322.915985
+281|                       NAME|                  Pierpoint|   636.878754
+282|                       NAME|                   Pierpont|   630.912619
+283|                       NAME|                     STAMPS|   665.257428
+284|                       NAME|              Wilson Center|   364.280794
+285|                       NCRC|                       Name|   597.887690
+286|                       NCRC|                  Pierpoint|   911.850458
+287|                       NCRC|                   Pierpont|   905.884323
+288|                       NCRC|                     STAMPS|   940.229132
+289|                       NCRC|              Wilson Center|   639.252499
+290|                       Name|                  Pierpoint|   655.333831
+291|                       Name|                   Pierpont|   649.367696
+292|                       Name|                     STAMPS|   683.712505
+293|                       Name|              Wilson Center|   280.401623
+294|                  Pierpoint|                   Pierpont|   233.323785
+295|                  Pierpoint|                     STAMPS|   198.978976
+296|                  Pierpoint|              Wilson Center|   374.932208
+297|                   Pierpont|                     STAMPS|    34.344809
+298|                   Pierpont|              Wilson Center|   368.966073
+299|                     STAMPS|              Wilson Center|   403.310882

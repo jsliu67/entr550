@@ -8,10 +8,41 @@ import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 // import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { TextField, Button, Box } from "@mui/material";
 import Dayjs from 'dayjs';
+import { FormControl } from '@mui/material';
+import { InputLabel } from '@mui/material';
+import { Select } from '@mui/material';
+import { MenuItem } from '@mui/material';
+
 
 
 export default function Input({ num, setClassCallback }) {
     const [thisClass, setThisClass] = useState(new Class('', '', ''));
+    const [buildings, setBuildings] = useState([
+        "Art and Architecture",
+        "BBB",
+        "CE",
+        "CSRB",
+        "Chrysler",
+        "Cooley",
+        "DOW",
+        "DUDE",
+        "EECS",
+        "ENGIN",
+        "EWRE",
+        "FMCRB",
+        "FXB",
+        "GGBL",
+        "Gorguze Family Laboratory",
+        "IOE",
+        "LBME",
+        "Music, Theater, Dance",
+        "NAME",
+        "NCRC",
+        "Name",
+        "Pierpont",
+        "STAMPS",
+        "Wilson Center"
+    ]);
 
     const handleInputChange = (field) => (event) => {
         let updatedClass;
@@ -38,7 +69,7 @@ export default function Input({ num, setClassCallback }) {
         <LocalizationProvider dateAdapter={AdapterDayjs}>
             <div className="styled-form">
                 <Box className="input-container">
-                    <Box className="input-box">
+                    {/* <Box className="input-box">
                         <TextField
                             label="Class"
                             value={thisClass.name}
@@ -46,6 +77,22 @@ export default function Input({ num, setClassCallback }) {
                             fullWidth
                             variant="outlined"
                         />
+                    </Box> */}
+                    <Box className="input-box">
+                        <FormControl fullWidth variant="outlined">
+                            <InputLabel>Building</InputLabel>
+                            <Select
+                                value={thisClass.name}
+                                onChange={handleInputChange('name')}
+                                label="Building"
+                            >
+                                {buildings.map((option, index) => (
+                                    <MenuItem key={index} value={option}>
+                                        {option}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
                     </Box>
 
                     <Box className="input-box">

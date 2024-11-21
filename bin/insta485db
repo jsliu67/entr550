@@ -36,7 +36,7 @@ case $1 in
     mkdir -p var/uploads
     sqlite3 var/insta485.sqlite3 < sql/schema.sql
     sqlite3 var/insta485.sqlite3 < sql/data.sql
-    cp sql/uploads/* var/uploads/
+    # cp sql/uploads/* var/uploads/
     # echo "FIXME implement me"
     ;;
 

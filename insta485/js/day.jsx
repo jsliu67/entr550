@@ -44,6 +44,7 @@ export default function Day({ id, onRemove }) {
     const calculateSchedule = (timeToDests) => {
         // set default value to true
         setIsValid(2);
+        setTimes(timeToDests);  // for debugging
         let newBadTimes = [];
         for (let i = 0; i < numClasses - 1; i++) {
             let timeBetween = timeDifferenceInSeconds(classes[i].end, classes[i + 1].start);
@@ -120,6 +121,19 @@ export default function Day({ id, onRemove }) {
         return isValid;
     };
 
+    const secondsToMS = (seconds) => {
+        // Get the total minutes and remaining seconds
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = Math.floor(seconds % 60);
+    
+        // Calculate hours and minutes
+        console.log(minutes, remainingSeconds);
+        // const hours = Math.floor(minutes / 60);
+        // const displayMinutes = minutes % 60;
+    
+        // Format as HH:MM
+        return `${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
+    }
 
     // useEffect(() => {
     //     // Call passValue once on mount to register the getValue function
@@ -128,7 +142,11 @@ export default function Day({ id, onRemove }) {
 
     return (
         <div className="reactEntry day">
-            <div className="day-title">     Day {id}</div>
+            <div className="day-name">
+                <a className="day-title">     Day {id + 1}                  </a>
+                <Button variant="outlined" className="button" onClick={() => onRemove(id)} sx={buttonStyles}>Remove Day</Button>
+            </div>
+
             <div>
                 {classes.map((c, index) => (
                     <Input key={index} num={index} setClassCallback={setClassCallback} />
@@ -136,11 +154,10 @@ export default function Day({ id, onRemove }) {
                 <Button variant="outlined" className="button" onClick={addClass} sx={buttonStyles}>Add Class</Button>
                 <Button variant="outlined" className="button" onClick={tempSetupBad} sx={buttonStyles}>Shortcut Class Bad</Button>
                 <Button variant="outlined" className="button" onClick={tempSetupGood} sx={buttonStyles}>Shortcut Class Good</Button>
-                <Button variant="outlined" className="button" onClick={() => onRemove(id)} sx={buttonStyles}>Remove Day</Button>
             </div>
             <Button variant="outlined" className="button" onClick={getData} sx={buttonStyles}>Check Schedule</Button>
             <div className="schedule-box">
-                <a>     Schedule {id}: </a>
+                <a>     Schedule {id + 1}: </a>
                 <a>{isValid == 0 ? "_______________" : (isValid == 1 ? "Bad ✘" : "Good ✔")}</a>
                 {
                     isValid === 1 && (
@@ -150,8 +167,8 @@ export default function Day({ id, onRemove }) {
                                 <div key={index}>
                                     <p>From: {badTime.from}</p>
                                     <p>To: {badTime.to}</p>
-                                    <p>Time between classes: {badTime.timeBetween}</p>
-                                    <p>Time to reach destination: {badTime.timeTaken}</p>
+                                    <p>Time available between classes: {secondsToMS(badTime.timeBetween)}</p>
+                                    <p>Time to reach destination: {secondsToMS(badTime.timeTaken)}</p>
                                     <hr />
                                 </div>
                             ))}
