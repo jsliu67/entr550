@@ -152,8 +152,8 @@ export default function Day({ id, onRemove }) {
                     <Input key={index} num={index} setClassCallback={setClassCallback} />
                 ))}
                 <Button variant="outlined" className="button" onClick={addClass} sx={buttonStyles}>Add Class</Button>
-                <Button variant="outlined" className="button" onClick={tempSetupBad} sx={buttonStyles}>Shortcut Class Bad</Button>
-                <Button variant="outlined" className="button" onClick={tempSetupGood} sx={buttonStyles}>Shortcut Class Good</Button>
+                {/* <Button variant="outlined" className="button" onClick={tempSetupBad} sx={buttonStyles}>Shortcut Class Bad</Button> */}
+                {/* <Button variant="outlined" className="button" onClick={tempSetupGood} sx={buttonStyles}>Shortcut Class Good</Button> */}
             </div>
             <Button variant="outlined" className="button" onClick={getData} sx={buttonStyles}>Check Schedule</Button>
             <div className="schedule-box">
