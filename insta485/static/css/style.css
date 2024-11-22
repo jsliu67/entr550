@@ -28,7 +28,8 @@ a:link {
 .page {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between;
+    margin-right: 5%; */
 }
 .class-input {
     margin-bottom: 5rem;
@@ -194,4 +195,7 @@ input{
 .day-name {
     display: flex;
     justify-content: space-between;
+}
+.content {
+    margin-right: 5%;
 }

@@ -51,15 +51,15 @@ export default function Page({ }) {
 
   return (
     <div className="reactEntry page">
-      <div>
+      <div className="content">
         {days.map(day => (
           <Day key={day.id} id={day.id} onRemove={removeDay} />
         ))}
         <button onClick={addDay}>Add Day</button>
       </div>
-      <div>
+      <div style={{width: "30%"}}>
         {/* <Button variant="outlined" className="button" onClick={calcAllDays} sx={buttonStyles}>Check Schedule</Button> */}
-        <img src="../static/images/north-campus.png" style={{ width: "35rem" }}  alt="post_image" />
+        <img src="../static/images/north-campus.png" style={{ width: "100%" }}  alt="post_image" />
       </div>
 
     </div>
