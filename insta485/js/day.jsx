@@ -48,10 +48,9 @@ export default function Day({ id, onRemove }) {
         let newBadTimes = [];
         for (let i = 0; i < numClasses - 1; i++) {
             let timeBetween = timeDifferenceInSeconds(classes[i].end, classes[i + 1].start);
-            console.log(classes[i].end);
-            console.log(classes[i + 1].start);
-            console.log(timeBetween);
             let timeTaken = timeToDests[i];
+            console.log(timeBetween);
+            console.log(timeTaken);
 
             if (timeBetween < timeTaken) {
                 // not enough time between
